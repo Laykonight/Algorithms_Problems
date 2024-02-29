@@ -1,0 +1,9 @@
+#Ignore_everything
+*
+
+#exception_rule
+!.md
+!.gitignore
+!*/
+!*.java
+
