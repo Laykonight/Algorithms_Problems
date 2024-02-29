@@ -12,4 +12,25 @@ Examples of expected behavior:
 */
 
 public class Is_Palindrome {
+    private static boolean isPalindrome(String str){
+        int start = 0;
+        int end = str.length() - 1;
+
+        while (start < end){
+            if (str.charAt(start) != str.charAt(end)){
+                return false;
+            }
+            ++start;
+            --end;
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        String strTrue = "ABCBA";
+        String strFalse = "ABCFBA";
+
+        System.out.println("strTrue = ABCBA -> " + isPalindrome(strTrue));
+        System.out.println("strFalse = ABCFBA -> " + isPalindrome(strFalse));
+    }
 }

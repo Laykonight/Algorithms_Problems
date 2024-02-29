@@ -1,4 +1,4 @@
-package Data_Structures;
+package Data_Structures.Libraries_Implementations;
 
 import java.util.EmptyStackException;
 import java.util.Stack;
@@ -10,13 +10,13 @@ public class MaxStack1 {
     public MaxStack1(){
         this.values = new Stack<>();
         this.max = new Stack<>();
-        this.max.add(Integer.MIN_VALUE);
+        this.max.push(Integer.MIN_VALUE);
     }
 
     public void add(int value){
-        values.add(value);
+        values.push(value);
         if (value >= max.peek()){
-            max.add(value);
+            max.push(value);
         }
     }
 
