@@ -1,4 +1,4 @@
-package Data_Structures.Libraries_Implementations;
+package Data_Structures.Libraries_Implementations.Max_Stack;
 
 import java.util.EmptyStackException;
 import java.util.Stack;
